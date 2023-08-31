@@ -27,12 +27,71 @@
     <div id="about">
       <div class="container">
         <div class="row">
-            <div class="about-col-1"></div>
-            <div class="about-col-2">
-                <h1>About Me</h1>
+          <div class="about-col-1"></div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit, id taciti
+              vitae sapien sem molestie, scelerisque sed etiam odio ac libero.
+              Odio nec dui pretium elementum aptent dis, eget ut enim maecenas
+              hendrerit, hac libero mattis integer euismod. Ut arcu nisl nulla
+              nullam phasellus pharetra taciti fermentum, lacus pretium
+              vulputate mattis nisi lectus tristique, duis penatibus eleifend
+              tincidunt ultrices dictum litora.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full Stack Development</span><br />Web App Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jan, 2023 - Mar 2023</span><br />FULL STACK DEVELOPER,
+                  CodeOp
+                </li>
+                <li>
+                  <span>Apr 2022 - Jan 2023</span><br />FRONTEND DEVELOPMENT
+                  WITH REACT, Codecademy
+                </li>
+                <li><span>Nov 2017 - Jan 2020</span><br />NAIL ARTIST</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Cal Gravat</span><br />Secondary School</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
