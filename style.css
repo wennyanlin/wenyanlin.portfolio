@@ -234,6 +234,11 @@ nav .fas {
     cursor: pointer;
   }
 
+  nav {
+    text-align: right;
+    display: block;
+  }
+
   /*----------Dropdown menu---------------*/
 
   .dropdown-menu.open li {
@@ -254,9 +259,11 @@ nav .fas {
     height: 80px;
     display: block;
     position: absolute;
+    text-align: right;
+    padding-right: 50px;
     right: 0;
     top: 50px;
-    width: 100px;
+    width: 150px;
     background: rgb(255, 255, 255, 0.1);
     backdrop-filter: transparent;
     overflow: hidden;
