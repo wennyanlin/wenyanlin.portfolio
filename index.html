@@ -183,7 +183,7 @@
       toggleBtn.onclick = () => {
         dropDownMenu.classList.toggle("open");
         const isOpen = dropDownMenu.classList.contains("open");
-        toggleBtnIcon = isOpen
+        isOpen
           ? (toggleBtnIcon.textContent = "remove")
           : (toggleBtnIcon.textContent = "add");
       };

@@ -201,6 +201,14 @@ form btn2 {
 nav .fas {
   display: none;
 }
+.toggle-btn .material-symbols-outlined {
+  /*toggle-btn*/
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+}
 
 @media only screen and (max-width: 992px) {
   #header {
@@ -222,46 +230,36 @@ nav .fas {
   }
   .toggle-btn .material-symbols-outlined {
     display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
   }
-} /*----------Dropdown menu---------------*/
-.toggle-btn .material-symbols-outlined {
-  /*toggle-btn*/
-  display: flex;
-  font-size: 2.5rem;
-  cursor: pointer;
-  display: none;
-}
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 50px;
-  height: 0;
-  width: 100px;
-  background: rgb(255, 255, 255, 0.1);
-  backdrop-filter: transparent;
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.dropdown-menu.open {
-  height: 80px;
-  display: none;
-}
 
-.dropdown-menu li {
-  padding: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  list-style: none;
-  display: inline-block;
-  margin: 10px, 20px;
-}
-.dropdown-menu {
-  display: block;
-}
-.dropdown-menu li a {
-  text-decoration: none;
-  color: black;
-  font-size: small;
+  /*----------Dropdown menu---------------*/
+
+  .dropdown-menu.open li {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    list-style: none;
+    display: inline-block;
+    margin: 10px, 20px;
+  }
+  .dropdown-menu.open li a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+  }
+  .dropdown-menu.open {
+    height: 80px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 100px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: transparent;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
 }
