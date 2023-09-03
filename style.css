@@ -145,22 +145,27 @@ nav ul li a::after {
   margin-top: 30px;
 }
 .contact-left p span {
-  color: #74d2d2;
+  color: #000000;
   margin-right: 15px;
   font-size: 25px;
+}
+
+p span.material-symbols-sharp {
+  font-size: 40px;
 }
 .social-icons {
   margin-top: 30px;
 }
 
-.social-icons a {
+/*.social-icons a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
   color: grey;
   display: inline-block;
   transform: transform 0.5s;
-}
+}*/
+
 .social-icons a:hover {
   color: black;
   transform: translateY(-5px);
