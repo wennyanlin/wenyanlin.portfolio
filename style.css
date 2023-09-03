@@ -145,28 +145,41 @@ nav ul li a::after {
   margin-top: 30px;
 }
 .contact-left p span {
-  color: #74d2d2;
+  color: #000000;
   margin-right: 15px;
   font-size: 25px;
+}
+
+p span.material-symbols-sharp {
+  font-size: 40px;
 }
 .social-icons {
   margin-top: 30px;
 }
 
-.social-icons a {
+/*.social-icons a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
   color: grey;
   display: inline-block;
   transform: transform 0.5s;
-}
+}*/
+
 .social-icons a:hover {
   color: black;
   transform: translateY(-5px);
 }
 .btn.btn2 {
   display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 14px 30px;
+  font-size: 18px;
+}
+.btn.btn2 .material-symbols-sharp {
+  font-size: 30px;
+  margin-right: 10px;
 }
 contact-right form {
   width: 100%;
@@ -174,20 +187,23 @@ contact-right form {
 form input,
 form textarea {
   width: 100%;
-  border: 0;
-  outline: none;
-  background: floralwhite;
+  border: none;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1.5px solid;
   padding: 15px;
   margin: 15px 0;
   color: black;
   font-size: 18px;
   border-radius: 6px;
 }
-form btn2 {
-  padding: 14px 60px;
-  font-size: 18px;
+form .btn2 {
+  padding: 14px 30px;
+  font: 18px lightgrey;
   margin-top: 20px;
   cursor: pointer;
+  background-color: transparent;
+  border: 1.5px solid grey;
 }
 .copyright {
   width: 100%;
